@@ -18,7 +18,6 @@
   "homepage": "https://github.com/amellnik/Julia-Node-stack-demo#readme",
   "dependencies": {
     "csv-parse": "^1.0.4",
-    "ember-cli": "^2.4.3",
     "express": "^4.13.4",
     "express-fileupload": "0.0.4",
     "multer": "^1.1.0",

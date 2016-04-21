@@ -9,7 +9,6 @@ The input page uses [Skeleton](http://getskeleton.com/) which is awesome.
 Make sure you have node and the Clustering.jl module. 
 
     npm install 
-
     node index.js
 
 
