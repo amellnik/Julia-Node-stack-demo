@@ -1,0 +1,28 @@
+{
+  "name": "julia-node",
+  "version": "1.0.0",
+  "description": "A simple web stack with a Julia backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amellnik/Julia-Node-stack-demo.git"
+  },
+  "author": "A. Mellnik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amellnik/Julia-Node-stack-demo/issues"
+  },
+  "homepage": "https://github.com/amellnik/Julia-Node-stack-demo#readme",
+  "dependencies": {
+    "csv-parse": "^1.0.4",
+    "ember-cli": "^2.4.3",
+    "express": "^4.13.4",
+    "express-fileupload": "0.0.4",
+    "multer": "^1.1.0",
+    "mustache": "^2.2.1",
+    "node-julia": "^1.2.3"
+  }
+}

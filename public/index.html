@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="nine columns" style="margin-top: 10%">
+        <h4>Clustering</h4>
+        <p>Please enter the number of clusters, then choose a CSV file with two columns and click submit.</p>
+      </div>
+    </div>
+    <form id        =  "uploadForm"
+          enctype   =  "multipart/form-data"
+          action    =  "/api/clusterData"
+          method    =  "post"
+          >
+      <div class="row">
+        <label for="numClusters">Number of clusters:</label>
+      </div>
+      <div class="row">
+        <div class="three columns">
+          <input class="u-full-width" value="3" id="numClusters" name="numClusters" type="number">
+        </div>
+        <div class="four columns">
+          <input class="u-full-width"  type="file" name="clusterData" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns">
+          <input class="button-primary" type="submit" value="Submit" name="submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+
