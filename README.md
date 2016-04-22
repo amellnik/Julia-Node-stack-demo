@@ -13,6 +13,6 @@ Make sure you have node and the Clustering.jl module.
 
 Go to (localhost:8124)[localhost:8124].
 
-![Input page](.\doc\input.png)
+![Input page](/doc/input.png)
  
-![Output page](.\doc\out.png)
+![Output page](./doc/out.png)
