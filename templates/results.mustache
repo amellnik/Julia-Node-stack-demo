@@ -25,7 +25,12 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  
+  <!-- Plotly
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+ 
 </head>
 <body>
 
@@ -35,35 +40,35 @@
     <div class="row">
       <div class="nine columns" style="margin-top: 10%">
         <h4>Clustering</h4>
-        <p>Please enter the number of clusters, then choose a CSV file with two columns and click submit.</p>
+        <p>Here's the data from your csv grouped into {{K}} clusters:</p>
+        <div id="plot" style="width:900px;height:600px;"></div>
       </div>
     </div>
-    <form id        =  "uploadForm"
-          enctype   =  "multipart/form-data"
-          action    =  "/results"
-          method    =  "post"
-          >
-      <div class="row">
-        <label for="numClusters">Number of clusters:</label>
-      </div>
-      <div class="row">
-        <div class="three columns">
-          <input class="u-full-width" value="3" id="numClusters" name="numClusters" type="number">
-        </div>
-        <div class="four columns">
-          <input class="u-full-width"  type="file" name="clusterData" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="two columns">
-          <input class="button-primary" type="submit" value="Submit" name="submit">
-        </div>
-      </div>
-    </form>
+ 
   </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+   <script>
+    var trace = {
+    x: {{x}},
+    y: {{y}},
+    mode: 'markers',
+    type: 'scatter',
+    marker: {
+      color: {{c}},
+      colorscape: 'YIGnBu'
+    }
+  };
+
+
+
+  var data = [trace];
+
+  Plotly.newPlot('plot', data);
+  </script>
+  
 </body>
 </html>
 
