@@ -13,6 +13,6 @@ Make sure you have node and the Clustering.jl module.
 
 Go to (localhost:8124)[localhost:8124].
 
-![Input page](/doc/input.png)
+![Input page](https://github.com/amellnik/Julia-Node-stack-demo/blob/master/doc/input.PNG)
  
-![Output page](./doc/out.png)
+![Output page](https://github.com/amellnik/Julia-Node-stack-demo/blob/master/doc/output.PNG)
