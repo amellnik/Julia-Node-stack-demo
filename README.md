@@ -11,8 +11,12 @@ Make sure you have node and the Clustering.jl module.
     npm install 
     node index.js
 
-Go to (localhost:8124)[localhost:8124].
+Go to [localhost:8124](localhost:8124).
+
+You should see:
 
 ![Input page](https://github.com/amellnik/Julia-Node-stack-demo/blob/master/doc/input.PNG)
+ 
+Upload one of the sample csv files or your own, enter the number of clusters, then click submit.
  
 ![Output page](https://github.com/amellnik/Julia-Node-stack-demo/blob/master/doc/output.PNG)
